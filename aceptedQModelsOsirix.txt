@@ -1,0 +1,417 @@
+D: Accept Parameters:
+D: ========================= BEGIN A-ASSOCIATE-AC PDU =========================
+D: Their Implementation Class UID:    1.2.276.0.7238010.5.0.3.5.4
+D: Their Implementation Version Name: OSIRIX
+D: Application Context Name:    1.2.840.10008.3.1.1.1
+D: Calling Application Name:    GETSCU
+D: Called Application Name:     ANY-SCP
+D: Their Max PDU Receive Size:  16384
+D: Presentation Contexts:
+D:   Context ID:        1 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient Root Query/Retrieve Information Model - FIND
+D:   Context ID:        3 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient Root Query/Retrieve Information Model - MOVE
+D:   Context ID:        5 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient Root Query/Retrieve Information Model - GET
+D:   Context ID:        7 (Accepted)
+D:     Abstract Syntax: =Study Root Query/Retrieve Information Model - FIND
+D:     Accepted SCP/SCU Role: Default
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        9 (Accepted)
+D:     Abstract Syntax: =Study Root Query/Retrieve Information Model - MOVE
+D:     Accepted SCP/SCU Role: Default
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        11 (Accepted)
+D:     Abstract Syntax: =Study Root Query/Retrieve Information Model - GET
+D:     Accepted SCP/SCU Role: Default
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        13 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient/Study Only Query/Retrieve Information Model - FIND
+D:   Context ID:        15 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient/Study Only Query/Retrieve Information Model - MOVE
+D:   Context ID:        17 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Patient/Study Only Query/Retrieve Information Model - GET
+D:   Context ID:        19 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Composite Instance Root Retrieve - MOVE
+D:   Context ID:        21 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Composite Instance Root Retrieve - GET
+D:   Context ID:        23 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Composite Instance Retrieve Without Bulk Data - GET
+D:   Context ID:        25 (Accepted)
+D:     Abstract Syntax: =Computed Radiography Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        27 (Accepted)
+D:     Abstract Syntax: =Digital X-Ray Image Storage - For Presentation
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        29 (Accepted)
+D:     Abstract Syntax: =Digital X-Ray Image Storage - For Processing
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        31 (Accepted)
+D:     Abstract Syntax: =Digital Mammography X-Ray Image Storage - For Presentation
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        33 (Accepted)
+D:     Abstract Syntax: =Digital Mammography X-Ray Image Storage - For Processing
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        35 (Accepted)
+D:     Abstract Syntax: =Digital Intra-Oral X-Ray Image Storage - For Presentation
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        37 (Accepted)
+D:     Abstract Syntax: =Digital Intra-Oral X-Ray Image Storage - For Processing
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        39 (Accepted)
+D:     Abstract Syntax: =Encapsulated PDF Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        41 (Accepted)
+D:     Abstract Syntax: =Encapsulated CDA Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        43 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Encapsulated STL Storage
+D:   Context ID:        45 (Accepted)
+D:     Abstract Syntax: =Grayscale Softcopy Presentation State Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        47 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Segmented Volume Rendering Volumetric Presentation State Storage
+D:   Context ID:        49 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Multiple Volume Rendering Volumetric Presentation State Storage
+D:   Context ID:        51 (Accepted)
+D:     Abstract Syntax: =Color Softcopy Presentation State Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        53 (Accepted)
+D:     Abstract Syntax: =Pseudo-Color Softcopy Presentation State Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        55 (Accepted)
+D:     Abstract Syntax: =Blending Softcopy Presentation State Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        57 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =XA/XRF Grayscale Softcopy Presentation State Storage
+D:   Context ID:        59 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Grayscale Planar MPR Volumetric Presentation State Storage
+D:   Context ID:        61 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Compositing Planar MPR Volumetric Presentation State Storage
+D:   Context ID:        63 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Advanced Blending Presentation State Storage
+D:   Context ID:        65 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Volume Rendering Volumetric Presentation State Storage
+D:   Context ID:        67 (Accepted)
+D:     Abstract Syntax: =X-Ray Angiographic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        69 (Accepted)
+D:     Abstract Syntax: =Enhanced XA Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        71 (Accepted)
+D:     Abstract Syntax: =X-Ray Radiofluoroscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        73 (Accepted)
+D:     Abstract Syntax: =Enhanced XRF Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        75 (Accepted)
+D:     Abstract Syntax: =Positron Emission Tomography Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        77 (Accepted)
+D:     Abstract Syntax: =Legacy Converted Enhanced PET Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        79 (Accepted)
+D:     Abstract Syntax: =X-Ray 3D Angiographic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        81 (Accepted)
+D:     Abstract Syntax: =X-Ray 3D Craniofacial Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        83 (Accepted)
+D:     Abstract Syntax: =Breast Tomosynthesis Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        85 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Breast Projection X-Ray Image Storage - For Presentation
+D:   Context ID:        87 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Breast Projection X-Ray Image Storage - For Processing
+D:   Context ID:        89 (Accepted)
+D:     Abstract Syntax: =Enhanced PET Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        91 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Basic Structured Display Storage
+D:   Context ID:        93 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Intravascular Optical Coherence Tomography Image Storage - For Presentation
+D:   Context ID:        95 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Intravascular Optical Coherence Tomography Image Storage - For Processing
+D:   Context ID:        97 (Accepted)
+D:     Abstract Syntax: =CT Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        99 (Accepted)
+D:     Abstract Syntax: =Enhanced CT Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        101 (Accepted)
+D:     Abstract Syntax: =Legacy Converted Enhanced CT Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        103 (Accepted)
+D:     Abstract Syntax: =Nuclear Medicine Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        105 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =CT Performed Procedure Protocol Storage
+D:   Context ID:        107 (Accepted)
+D:     Abstract Syntax: =Ultrasound Multi-frame Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        109 (Accepted)
+D:     Abstract Syntax: =Parametric Map Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        111 (Accepted)
+D:     Abstract Syntax: =MR Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        113 (Accepted)
+D:     Abstract Syntax: =Enhanced MR Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        115 (Accepted)
+D:     Abstract Syntax: =MR Spectroscopy Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        117 (Accepted)
+D:     Abstract Syntax: =Enhanced MR Color Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        119 (Accepted)
+D:     Abstract Syntax: =Legacy Converted Enhanced MR Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        121 (Accepted)
+D:     Abstract Syntax: =RT Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        123 (Accepted)
+D:     Abstract Syntax: =RT Dose Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        125 (Accepted)
+D:     Abstract Syntax: =RT Structure Set Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        127 (Accepted)
+D:     Abstract Syntax: =RT Beams Treatment Record Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        129 (Accepted)
+D:     Abstract Syntax: =RT Plan Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        131 (Accepted)
+D:     Abstract Syntax: =RT Brachy Treatment Record Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        133 (Accepted)
+D:     Abstract Syntax: =RT Treatment Summary Record Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        135 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =RT Ion Plan Storage
+D:   Context ID:        137 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =RT Ion Beams Treatment Record Storage
+D:   Context ID:        139 (Accepted)
+D:     Abstract Syntax: =Ultrasound Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        141 (Accepted)
+D:     Abstract Syntax: =Enhanced US Volume Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        143 (Accepted)
+D:     Abstract Syntax: =Raw Data Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        145 (Accepted)
+D:     Abstract Syntax: =Spatial Registration Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        147 (Accepted)
+D:     Abstract Syntax: =Spatial Fiducials Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        149 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Deformable Spatial Registration Storage
+D:   Context ID:        151 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Segmentation Storage
+D:   Context ID:        153 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Surface Segmentation Storage
+D:   Context ID:        155 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Tractography Results Storage
+D:   Context ID:        157 (Accepted)
+D:     Abstract Syntax: =Real World Value Mapping Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        159 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Surface Scan Mesh Storage
+D:   Context ID:        161 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Surface Scan Point Cloud Storage
+D:   Context ID:        163 (Accepted)
+D:     Abstract Syntax: =Secondary Capture Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        165 (Accepted)
+D:     Abstract Syntax: =Multi-frame Single Bit Secondary Capture Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        167 (Accepted)
+D:     Abstract Syntax: =Multi-frame Grayscale Byte Secondary Capture Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        169 (Accepted)
+D:     Abstract Syntax: =Multi-frame Grayscale Word Secondary Capture Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        171 (Accepted)
+D:     Abstract Syntax: =Multi-frame True Color Secondary Capture Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        173 (Accepted)
+D:     Abstract Syntax: =VL Endoscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        175 (Accepted)
+D:     Abstract Syntax: =Video Endoscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        177 (Accepted)
+D:     Abstract Syntax: =VL Microscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        179 (Accepted)
+D:     Abstract Syntax: =Video Microscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        181 (Accepted)
+D:     Abstract Syntax: =VL Slide-Coordinates Microscopic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        183 (Accepted)
+D:     Abstract Syntax: =VL Photographic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        185 (Accepted)
+D:     Abstract Syntax: =Video Photographic Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        187 (Accepted)
+D:     Abstract Syntax: =Ophthalmic Photography 8 Bit Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        189 (Accepted)
+D:     Abstract Syntax: =Ophthalmic Photography 16 Bit Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        191 (Accepted)
+D:     Abstract Syntax: =Stereometric Relationship Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        193 (Accepted)
+D:     Abstract Syntax: =Ophthalmic Tomography Image Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        195 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Wide Field Ophthalmic Photography Stereographic Projection Image Storage
+D:   Context ID:        197 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Wide Field Ophthalmic Photography 3D Coordinates Image Storage
+D:   Context ID:        199 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Ophthalmic Optical Coherence Tomography En Face Image Storage
+D:   Context ID:        201 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Ophthalmic Optical Coherence Tomography B-scan Volume Analysis Storage
+D:   Context ID:        203 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =VL Whole Slide Microscopy Image Storage
+D:   Context ID:        205 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Lensometry Measurements Storage
+D:   Context ID:        207 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Autorefraction Measurements Storage
+D:   Context ID:        209 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Keratometry Measurements Storage
+D:   Context ID:        211 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Subjective Refraction Measurements Storage
+D:   Context ID:        213 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Visual Acuity Measurements Storage
+D:   Context ID:        215 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Spectacle Prescription Report Storage
+D:   Context ID:        217 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Ophthalmic Axial Measurements Storage
+D:   Context ID:        219 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Intraocular Lens Calculations Storage
+D:   Context ID:        221 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Macular Grid Thickness and Volume Report Storage
+D:   Context ID:        223 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Ophthalmic Visual Field Static Perimetry Measurements Storage
+D:   Context ID:        225 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Ophthalmic Thickness Map Storage
+D:   Context ID:        227 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Corneal Topography Map Storage
+D:   Context ID:        229 (Accepted)
+D:     Abstract Syntax: =Basic Text SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        231 (Accepted)
+D:     Abstract Syntax: =Enhanced SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        233 (Accepted)
+D:     Abstract Syntax: =Comprehensive SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        235 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Comprehensive 3D SR Storage
+D:   Context ID:        237 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Extensible SR Storage
+D:   Context ID:        239 (Accepted)
+D:     Abstract Syntax: =Procedure Log Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        241 (Accepted)
+D:     Abstract Syntax: =Mammography CAD SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        243 (Accepted)
+D:     Abstract Syntax: =Key Object Selection Document Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        245 (Accepted)
+D:     Abstract Syntax: =Chest CAD SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        247 (Accepted)
+D:     Abstract Syntax: =X-Ray Radiation Dose SR Storage
+D:     Accepted SCP/SCU Role: SCP
+D:     Accepted Transfer Syntax: =Explicit VR Little Endian
+D:   Context ID:        249 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Radiopharmaceutical Radiation Dose SR Storage
+D:   Context ID:        251 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Colon CAD SR Storage
+D:   Context ID:        253 (Rejected - Abstract Syntax Not Supported)
+D:     Abstract Syntax: =Implantation Plan SR Storage
+D: Accepted Extended Negotiation: None
+D: Accepted Asynchronous Operations Window Negotiation: None
+D: User Identity Negotiation Response: None
+D: ========================== END A-ASSOCIATE-AC PDU ==========================
+I: Association Accepted
+E: No suitable presentation context for the SCU role has been accepted by the peer for the SOP Class 'Patient Root Query/Retrieve Information Model - GET'
