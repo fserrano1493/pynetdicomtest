@@ -1,18 +1,32 @@
 from pydicom.dataset import Dataset
 
 from pynetdicom import AE
-from pynetdicom.sop_class import PatientRootQueryRetrieveInformationModelFind
+from pynetdicom.sop_class import StudyRootQueryRetrieveInformationModelFind
 
 # Initialise the Application Entity
 ae = AE()
 
 # Add a requested presentation context
 #ae.add_requested_context('1.2.840.10008.5.1.4.1.2.1.1')
-ae.add_requested_context('1.2.840.10008.5.1.4.1.2.1.1', '1.2.840.10008.5.1.4.1.2.1.1')
+ae.add_requested_context(StudyRootQueryRetrieveInformationModelFind)
 
 # Create our Identifier (query) dataset
+meta = Dataset()
+#meta.MediaStorageSOPClassUID = ds.SOPClassUID
+#meta.MediaStorageSOPInstanceUID = ds.SOPInstanceUID
+#meta.ImplementationClassUID = PYNETDICOM_IMPLEMENTATION_UID
+#meta.ImplementationVersionName = PYNETDICOM_IMPLEMENTATION_VERSION
+meta.TransferSyntaxUID = '1.2.840.10008.1.2'
+
 ds = Dataset()
 ds.PatientName = 'CITIZEN^Ramos'
+ds.PatientID = ''
+ds.SOPInstanceUID = '1.2.3'
+ds.SOPClassUID = '1.2.840.10008.5.1.4.1.2.1.1'
+#ds.is_implicit_VR
+#ds.is_little_endian
+#ds.TransferSyntaxUID.file_meta=
+ds.file_meta=meta
 ds.QueryRetrieveLevel = 'PATIENT'
 
 # Associate with peer AE at IP 127.0.0.1 and port 11112
@@ -27,7 +41,7 @@ for rj in assoc.rejected_contexts:
 
 if assoc.is_established:
     # Use the C-FIND service to send the identifier
-    responses = assoc.send_c_find(ds, PatientRootQueryRetrieveInformationModelFind)
+    responses = assoc.send_c_find(ds, StudyRootQueryRetrieveInformationModelFind)
 
     for (status, identifier) in responses:
         if status:
