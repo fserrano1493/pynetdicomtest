@@ -4,7 +4,6 @@ from pydicom import dcmread
 from pydicom.dataset import Dataset
 
 from pynetdicom import AE, StoragePresentationContexts, evt
-from pynetdicom.sop_class import PatientRootQueryRetrieveInformationModelMove
 
 from pynetdicom import AE
 
@@ -15,7 +14,7 @@ ae = AE()
 ae.add_requested_context('1.2.840.10008.1.1')
 
     # Associate with a peer DICOM AE
-assoc = ae.associate('127.0.0.1', 11112)
+assoc = ae.associate('localhost', 11112)
 
 for rj in assoc.rejected_contexts:
     print('Contextos Rechazados: Context: {}, SCP role: {}, SCU role: {}'.format(rj.abstract_syntax, rj.as_scp, rj.as_scu))

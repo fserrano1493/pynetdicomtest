@@ -67,7 +67,7 @@ assoc = ae.associate('medicac.fortiddns.com', 4006, ext_neg=[role], evt_handlers
 
 if assoc.is_established:
     # Use the C-GET service to send the identifier
-    responses = assoc.send_c_get(ds, StudyRootQueryRetrieveInformationModelGet)
+    responses = assoc.send_c_store(ds, StudyRootQueryRetrieveInformationModelGet)
 
     for (status, identifier) in responses:
         if status:

@@ -1,13 +1,13 @@
 from pydicom.dataset import Dataset
 
 from pynetdicom import AE
-from pynetdicom.sop_class import PatientRootQueryRetrieveInformationModelMove
+from pynetdicom.sop_class import StudyRootQueryRetrieveInformationModelMove
 
 # Initialise the Application Entity
 ae = AE()
 
 # Add a requested presentation context
-ae.add_requested_context(PatientRootQueryRetrieveInformationModelMove)
+ae.add_requested_context(StudyRootQueryRetrieveInformationModelMove)
 
 # Create out identifier (query) dataset
 ds = Dataset()
@@ -24,7 +24,7 @@ assoc = ae.associate('medicac.fortiddns.com', 4006)
 
 if assoc.is_established:
     # Use the C-MOVE service to send the identifier
-    responses = assoc.send_c_move(ds, b'STORE_SCP', PatientRootQueryRetrieveInformationModelMove)
+    responses = assoc.send_c_move(ds, b'STORE_SCP', StudyRootQueryRetrieveInformationModelMove)
 
     for (status, identifier) in responses:
         if status:
